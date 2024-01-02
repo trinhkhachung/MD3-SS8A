@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    .anh {
+        width: 500px;
+        height: 500px;
+        background-color: plum;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .em {
+        background-color: pink;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        position: relative;
+        border: 10px solid black;
+    }
+
+    span {
+        position: absolute;
+        background-color: rgb(131, 131, 255);
+        width: 10px;
+        height: 150px;
+        left: 48%;
+        animation: rotate 60s linear infinite;
+        transform-origin: 50% 100%;
+    }
+
+    @keyframes rotate {
+        0% {}
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<body>
+    <div class="anh">
+        <div class="em">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</body>
+
+</html>
